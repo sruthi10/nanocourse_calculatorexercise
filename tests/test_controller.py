@@ -8,3 +8,6 @@ def test_returnSignal(controller):
     )
     controller._view.display.keyPressEvent(event)
     assert controller._view.displayText() == "3"
+
+
+## added code from unit-test exercise

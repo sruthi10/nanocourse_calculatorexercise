@@ -28,6 +28,7 @@ def model():
 
 @pytest.fixture(scope="session")
 def controller(model, view):
+    print("in controller")
     from pycalc.controller import PyCalcCtrl
 
     yield PyCalcCtrl(model, view)

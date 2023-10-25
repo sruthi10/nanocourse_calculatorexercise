@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: pycalc
+Version: 0.0.0
+Summary: An MVC calculator made in Qt.
+Author: Tim Jones
+Project-URL: Source, https://github.com/TheDeanLab/CI2023
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Scientific/Engineering :: Education
+Classifier: Operating System :: OS Independent
+Classifier: Framework :: Matplotlib
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: PyQt5
+Provides-Extra: dev
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: pytest-cov; extra == "dev"
+Requires-Dist: pre-commit; extra == "dev"
+Provides-Extra: docs
+Requires-Dist: numpydoc; extra == "docs"
+Requires-Dist: nbconvert; extra == "docs"
+Requires-Dist: ipykernel; extra == "docs"
+Requires-Dist: sphinx<6.0.0; extra == "docs"
+Requires-Dist: sphinx-copybutton; extra == "docs"
+Requires-Dist: sphinx-issues; extra == "docs"
+Requires-Dist: sphinx-design; extra == "docs"
+Requires-Dist: pyyaml; extra == "docs"
+Requires-Dist: pydata_sphinx_theme==0.10.0rc2; extra == "docs"
+
+# pyqt5-calc
+
+## Simple calculator based on MVC pattern with Python and PyQt5 library.
+
+Calculator based on tutorial from [Real Python](https://realpython.com/):  [Python and PyQt: Building a GUI Desktop Calculator](https://realpython.com/python-pyqt-gui-calculator/). I updated the implementation to split the application into separate [modules](https://docs.python.org/3/tutorial/modules.html) to follow the [MVC (model-view-controller)](https://realpython.com/the-model-view-controller-mvc-paradigm-summarized-with-legos) pattern used in the tutorial, with those modules further placed into a package.
+
+## Installation
+
+For a development install, enter `pip install -e .[dev]`.
